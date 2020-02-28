@@ -8,8 +8,7 @@ def important():
 
   last = 13
   rnd = random.randint(0, last)
-  print(quotes[rnd])
-  
+  print("{0} {1} {2}".format(quotes[rnd],quotes[random.randint(0,last)],quotes[random.randint(0,last)]).replace("\n",""))
 
 if __name__== "__main__":
   important()
